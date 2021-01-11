@@ -12,7 +12,7 @@ export class YoutubeService {
 
   private youTubeUrl    = 'https://www.googleapis.com/youtube/v3';
   private apiKey        = 'AIzaSyAMujXEe7os3YAqy17zUuqOqNhu0BYff1U';
-  private playList      = 'UUuaPTYj15JSkETGnEseaFFg';
+  private playList      = 'PLuEZQoW9bRnTKcse75pub6T3-pi5M7NGy';
   private nextPageToken = '';
 
   constructor(private http: HttpClient) { 
