@@ -2,10 +2,34 @@
     <div class="col-12 my-3">
         <h1 class="fw-light">Youtube Videos</h1>
         <hr>
+        
     </div>
 </div>
-<div class="row">
-    <div class="col-12">
-
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col" *ngFor="let video of videos">
+      <div class="card h-100 animate__animated animate__fadeInDown animate__slow">
+        <img [src]="video.thumbnails.high.url" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">{{video.title}}</h6>
+          <p class="card-text"><small><strong>Autor: {{video.channelTitle}}</strong></small></p>
+          <p class="card-text"><small><strong>Publicado: {{video.publishedAt | date}}</strong></small></p>
+        </div>
+        <div class="card-footer">
+            <div class="d-grid gap-2">
+                <button
+                    (click)="verVideo( video )" 
+                    class="btn btn-outline-danger" 
+                    type="button">Ver video</button>
+            </div>            
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+  <div class="row my-5">
+      <div class="col text-center">
+        <button
+          (click)="loadVideos()" 
+          class="btn btn-primary btn-lg">Siguiente página
+        </button>
+      </div>
+  </div>

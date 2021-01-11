@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/* .video-play::before { 
+    content: "\f144"; 
+    left: -40%;
+    top: -40%;
+    font: normal normal normal 14px/1; 
+    font-family: 'Font Awesome\ 5 Free'; 
+    font-weight: 900; font-size: inherit; 
+    text-rendering: auto; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    font-size: 50px; color: #b3b5bc; 
+}
+.video-play:hover::before { color: #172651; } */
